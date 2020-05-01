@@ -1,6 +1,5 @@
 package android.example.popular_movies_stage_1;
 
-import android.content.Context;
 import android.example.popular_movies_stage_1.model.Movie;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,6 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
 import androidx.annotation.NonNull;
-
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewHolder> {
@@ -27,7 +25,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
         ImageView imageView;
         final static String IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
-        public MovieViewHolder(@NonNull View itemView) {
+        MovieViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.iv_movie_poster);
             itemView.setOnClickListener(this);
@@ -45,7 +43,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
         }
     }
 
-    public MoviesAdapter(Movie movies[], MovieClickHandler movieClickHandler) {
+    public MoviesAdapter(Movie [] movies, MovieClickHandler movieClickHandler) {
         this.movies = movies;
         this.movieClickHandler = movieClickHandler;
     }
@@ -64,7 +62,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
         holder.bind(movies[position]);
     }
 
-    public void setMoviesArray(Movie movies []) {
+    public void setMoviesArray(Movie [] movies) {
         this.movies = movies;
     }
 

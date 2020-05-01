@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">Popular-Movies-Stage-1</string>
     <!-- TODO replace the Movie DB API v3 Key -->
-    <string name="api_key_v3">557aaf7c11eba7ecd7dbf26c8cedc62f</string>
+    <string name="api_key_v3"></string>
     <string name="detail_activity_title_label">Title: </string>
     <string name="content_description">This is the movie poster</string>
     <string name="movie_details_popular_url">https://api.themoviedb.org/3/movie/popular?api_key=</string>
     <string name="movie_details_top_rated_url">https://api.themoviedb.org/3/movie/top_rated?api_key=</string>
-    <string name="movie_poster_main_activity"></string>
     <string name="select_menu_option">Select an option to display movies</string>
     <string name="show_network_error_message">This app requires internet, switch it on and select an option to display movies.</string>
+    <string name="option_popularity">Sort by Popularity</string>
+    <string name="option_top_rated">Sort by Top rating</string>
 </resources>

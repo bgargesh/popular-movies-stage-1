@@ -13,7 +13,9 @@ import com.squareup.picasso.Picasso;
 public class DisplayMovie extends AppCompatActivity {
 
     final static String IMAGE_URL = "https://image.tmdb.org/t/p/w780";
-    static String MOVIE_KEY = "movie";
+    final static String MOVIE_KEY = "movie";
+    final static String RELEASED_ON = "Released on: ";
+    final static String RATING = "Rating: ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +33,13 @@ public class DisplayMovie extends AppCompatActivity {
         TextView titleTextView = (TextView) findViewById(R.id.tv_title);
         titleTextView.setText(movie.getOriginal_name());
         TextView releasedOnTextView = (TextView) findViewById(R.id.tv_release_date);
-        releasedOnTextView.setText("Released on: " + movie.getRelease_date());
+        String releasedOn = RELEASED_ON + movie.getRelease_date();
+        releasedOnTextView.setText(releasedOn);
 
         TextView ratingTextView = (TextView) findViewById(R.id.tv_rating);
-        ratingTextView.setText("Rating: " + movie.getRating());
+        String rating = RATING + movie.getRating();
+
+        ratingTextView.setText(rating);
 
     }
 }

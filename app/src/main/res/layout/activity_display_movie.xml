@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayMovie"
-    >
+    tools:context=".DisplayMovie">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="8dp">
 
@@ -69,9 +67,6 @@
                 android:textSize="26sp"
                 android:fontFamily="monospace"
                 android:paddingBottom="8dp"/>
-
-
-
     </LinearLayout>
     </ScrollView>
 </FrameLayout>

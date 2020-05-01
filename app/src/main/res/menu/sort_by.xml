@@ -2,12 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/sort_by_popular" android:title="Sort by Popularity"
+    <item android:id="@+id/sort_by_popular" android:title="@string/option_popularity"
         android:titleCondensed="Popularity"
         android:orderInCategory="1"
         app:showAsAction="collapseActionView"
         />
-    <item android:id="@+id/sort_by_top_rated" android:title="Sort by Top rated"
+    <item android:id="@+id/sort_by_top_rated" android:title="@string/option_top_rated"
         android:titleCondensed="Top Rated"
         android:orderInCategory="2"
         app:showAsAction="collapseActionView"/>

@@ -1,13 +1,5 @@
 package android.example.popular_movies_stage_1;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
-
-import android.content.Context;
 import android.content.Intent;
 import android.example.popular_movies_stage_1.model.Movie;
 import android.net.ConnectivityManager;
@@ -29,6 +21,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
 public class MainActivity extends AppCompatActivity implements MoviesAdapter.MovieClickHandler {
 
     RecyclerView mRecyclerView;
@@ -36,15 +35,15 @@ public class MainActivity extends AppCompatActivity implements MoviesAdapter.Mov
     TextView mMessageTextView;
 
 
-    static String MOVIE_KEY = "movie";
+    final static String MOVIE_KEY = "movie";
 
-    static String TITLE_KEY = "original_title";
-    static String PLOT_KEY = "overview";
-    static String RELEASE_DATE_KEY = "release_date";
-    static String POSTER_KEY = "poster_path";
-    static String RATING_KEY = "vote_average";
+    final static String TITLE_KEY = "original_title";
+    final static String PLOT_KEY = "overview";
+    final static String RELEASE_DATE_KEY = "release_date";
+    final static String POSTER_KEY = "poster_path";
+    final static String RATING_KEY = "vote_average";
 
-    static String LOG_TAG = "MOVIE_DB_API_ERROR";
+    final static String LOG_TAG = "MOVIE_DB_API_ERROR";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
